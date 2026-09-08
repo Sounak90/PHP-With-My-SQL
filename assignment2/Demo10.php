@@ -22,10 +22,12 @@
 
 <?php
 $arr = array($_POST['num1'], $_POST['num2'], $_POST['num3'], $_POST['num4']);
-
+echo "Original Array: ";
+echo "[" . implode(", ", $arr) . "]";
+echo "<br>";
 $first = array_shift($arr);
 $arr[] = $first;
-
+echo "Array After Rotation: ";
 echo "[" . implode(", ", $arr) . "]";
 ?>
 
